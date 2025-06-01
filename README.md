@@ -36,7 +36,7 @@ git clone https://github.com/gtcore902/free-rock-band-website-template.git
 :five: Then you need to update these variables in 'sendFormContact.php' in your code editor to use form sections:
 * $texte = "your site name" (line 11)
 * $destinataire = "your email"
-* $objet = "your band name"
+* $objet = "Mother Monkey"
 * line 19 = "email from to send form" (you can choose any)
 * $conf = "yours smtp informations"
 

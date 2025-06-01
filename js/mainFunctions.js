@@ -52,8 +52,8 @@ $(function () {
 // Listener pour chargement adresse mailto
 window.addEventListener("load", function () {
   if (document.getElementById('insertMail')) {
-    let name = "contact" ; // Update yours informations here
-    let domain = "yourbandname.com" ; // Update yours informations here
+    let name = "mothermonkeyrock" ; // Update yours informations here
+    let domain = "gmail.com" ; // Update yours informations here
     //let subject = "subject=Formulaire Tuco" ;
     let divMail = document.getElementById('insertMail');
     let newAhref = document.createElement('a');
@@ -131,7 +131,7 @@ $(function () {
           let telephone = $('#telephone').val();
           let mail = $('#mail').val();
           let message = $('#message').val();
-          let newsletter = $('input[name="newsletter"]:checked').val();
+          let newsletter = 0;
           let checkRobot = $('#checkRobot').val();
           if ($('#checkRobot').val() == 7) {
               $.post('../datas/sendFormContact.php',
@@ -313,16 +313,19 @@ $(function () {
 
 // Locations
 $(function () {
-    $(".card").on('click', () => {window.location.href = "https://www.instagram.com/"});
-})
+  $(".card").on('click', () => {
+      window.open("https://www.instagram.com/mother_monkey_rock/", "_blank");
+  });
+});
+
 // Location socials
 $(function () {
     $('.facebook').on('click', function(event) {
       event.preventDefault();
-      window.location.href = "https://facebook.com/";
+      window.open("https://www.facebook.com/themothermonkey/", '_blank');
     });
     $('.instagram').on('click', function(event) {
       event.preventDefault();
-      window.location.href = "https://www.instagram.com/";
+      window.open("https://www.instagram.com/mother_monkey_rock/", '_blank');
     });
 })

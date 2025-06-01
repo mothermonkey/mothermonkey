@@ -195,7 +195,13 @@ body {
 }
 
 section {
-  min-height: 80vh;
+  min-height: 40vh;
+  padding: 50px 15% 50px 15%;
+  background-color: #1A1B1D;
+}
+
+.section-small {
+  min-height: 1vh;
   padding: 50px 15% 50px 15%;
   background-color: #1A1B1D;
 }
@@ -352,8 +358,8 @@ p.miniPara {
   left: 0;
   margin: 15px auto;
   width: 100%;
-  max-width: 250px;
-  height: 250px;
+  max-width: 200px;
+  height: 200px;
   opacity: 0;
   background-color: rgba(244, 89, 30, 0.7);
   z-index: 2;
@@ -366,7 +372,7 @@ p.miniPara {
 .imgContent img {
   position: relative;
   width: 100%;
-  max-width: 250px;
+  max-width: 200px;
   margin: 15px auto;
   border-radius: 15px;
 }
@@ -441,7 +447,7 @@ p.pink:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 40vh;
 }
 
 footer {
@@ -451,6 +457,7 @@ footer {
 
 .contact p {
   text-align: center;
+  height: 5vh;
 }
 
 section.blocNewsletter {
