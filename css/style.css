@@ -201,7 +201,7 @@ section {
 }
 
 .section-small {
-  min-height: 1vh;
+  min-height: 10vh;
   padding: 50px 15% 50px 15%;
   background-color: #1A1B1D;
 }

@@ -63,6 +63,21 @@ window.addEventListener("load", function () {
   }
 })
 
+// Script adresse Email
+// Listener pour chargement adresse mailto
+window.addEventListener("load", function () {
+  if (document.getElementById('insertMail1')) {
+    let name = "mothermonkeyrock" ; // Update yours informations here
+    let domain = "gmail.com" ; // Update yours informations here
+    //let subject = "subject=Formulaire Tuco" ;
+    let divMail = document.getElementById('insertMail1');
+    let newAhref = document.createElement('a');
+    newAhref.href = "mailto:" + name + '@' + domain;
+    newAhref.innerHTML = name + '@' + domain;
+    divMail.appendChild(newAhref);
+  }
+})
+
 // Manage vidéo
 $(function () {
     $('video').on('click', function(event) {
